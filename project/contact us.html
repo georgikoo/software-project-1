@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Gacias Tavern | Contact Us</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href='D:\George\sadat\All years\third year second term\Software constructions\project\css.css' />
+    <link rel="shortcut icon" href="img\logo\Garcia Tavern-logos.jpeg" />
+    <script src="./js/anime.min.js"></script>    
+    <script src="js/intro.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+        <style>
+      /* General Styles */
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f2f2f2;
+      }
+      
+      /* Header Styles */
+      header {
+        background-color: #c0392b;
+        color: #fff;
+        padding: 10px;
+        text-align: center;
+      }
+      
+      header h1 {
+        margin: 0;
+        font-size: 36px;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+      
+      /* Navigation Styles */
+      nav {
+        background-color: #444;
+        color: #fff;
+        overflow: hidden;
+      }
+      
+      nav a {
+        float: left;
+        display: block;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+      }
+      
+      nav a:hover {
+        background-color: #ddd;
+        color: #000;
+      }
+      
+      /* Main Content Styles */
+      main {
+        padding: 20px;
+      }
+      
+      main h2 {
+        font-size: 32px;
+        font-weight: bold;
+        text-transform: uppercase;
+        margin-bottom: 20px;
+      }
+      
+      main p {
+        font-size: 18px;
+        line-height: 1.5;
+        margin-bottom: 20px;
+      }
+      
+      /* Form Styles */
+      form {
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        padding: 10px;
+        background-color: #fff;
+      }
+      
+      form label {
+        display: block;
+        font-size: 18px;
+        font-weight: bold;
+        margin-bottom: 10px;
+      }
+      
+      form input[type="text"],
+      form input[type="email"],
+      form textarea {
+        display: block;
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-bottom: 20px;
+        font-size: 18px;
+        font-family: Arial, sans-serif;
+      }
+      
+      form textarea {
+        height: 150px;
+      }
+      
+      form input[type="submit"] {
+        background-color: #c0392b;
+        color: #fff;
+        border: none;
+        border-radius: 5px;
+        padding: 10px 20px;
+        font-size: 18px;
+        cursor: pointer;
+      }
+      
+      form input[type="submit"]:hover {
+        background-color: #fff;
+        color: #c0392b;
+        border: 1px solid #c0392b;
+      }
+      
+      /* Footer Styles */
+      footer {
+        background-color: #333;
+        color: #fff;
+        text-align: center;
+        padding: 10px;
+      }
+      
+      footer p {
+        margin: 0;
+        font-size: 14px;
+      }
+      
+      footer a {
+        color: #fff;
+        text-decoration: none;
+      }
+      
+      footer a:hover {
+        text-decoration: underline;
+      }
+      
+      /* Responsive Styles */
+      @media screen and (max-width: 600px) {
+        nav a {
+          float: none;
+          width: 100%;
+        }
+    
+    nav a:not(:first-child) {
+      display: none;
+    }
+    
+    nav a.icon {
+      float: right;
+      display: block;
+    }
+    
+    nav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    
+    nav.responsive a:not(:first-child) {
+      display: block;
+    }
+  }
+</style>
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <h1>Gacias Tavern</h1>
+  </header><!-- Navigation -->
+  <nav>
+    <a href="file:///D:/George/sadat/All%20years/third%20year%20second%20term/Software%20constructions/project/Home.html">Home</a>
+    <a href="file:///D:/George/sadat/All%20years/third%20year%20second%20term/Software%20constructions/project/Html.html?page=hom">Menu</a>
+    <a href="file:///D:/George/sadat/All%20years/third%20year%20second%20term/Software%20constructions/project/ourstory.html">Our Story</a>
+    <a href="file:///D:/George/sadat/All%20years/third%20year%20second%20term/Software%20constructions/project/contact%20us.html" class="active">Contact us</a>
+  </nav>
+  
+  <!-- Main Content -->
+  <main>
+    <h2>Contact Us</h2>
+    
+    <p>Have a question or comment? Fill out the form below and we'll get back to you as soon as possible.</p>
+    
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required>
+      
+      <label for="message">Message:</label>
+      <textarea id="message" name="message" required></textarea>
+      
+      <input type="submit" value="Submit">
+    </form>
+  </main>
+  
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2023 Gacias Tavern. All rights reserved. | <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></p>
+  </footer>
+  
+  <!-- JavaScript -->
+  <script>
+    // Responsive Navigation
+    function responsiveNav() {
+      var x = document.querySelector("nav");
+      if (x.className === "") {
+        x.className = "responsive";
+      } else {
+        x.className = "";
+      }
+    }
+  </script>
+  
